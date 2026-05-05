@@ -492,7 +492,7 @@ def main():
     print_results(results)
 
     #Recommendations for selected user for all models
-    print(f"Recommendations for userId= {target_user_id}  (user_idx={target_user_idx})")
+    print(f"Recommendations for userId = {target_user_id}  (user_idx={target_user_idx})")
 
     recommend_for_user_gcn(gcn_model, edge_index, train_df, target_user_idx, num_users, num_movies,
         idx_to_movie, movie_id_to_title, k=10)
